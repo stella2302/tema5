@@ -37,7 +37,6 @@
         img {
             width: 100%;
         }
-
     </style>
 
 </head>
@@ -74,16 +73,10 @@
                 let destination = document.querySelector("#liste");
 
                 personer.forEach(person => {
-                    destination.innerHTML += < div id = "box" > < h2 > $ {
-                        person.navn
-                    } < /h2> <a href="https:/ / github.com / $ {
-                        person.github
-                    }
-                    ">Github</a><img src=${person.billede}><br></div>;
+                    destination.innerHTML += `<div id="box"> <h2> ${person.navn}  </h2> <a href="https://github.com/ ${person.github} ">Github</a><img src=${person.billede}><br></div>`;
                 })
             }
         }
-
     </script>
 </body>
 
