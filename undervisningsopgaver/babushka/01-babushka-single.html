@@ -51,7 +51,7 @@
 
         #indhold {
             min-height: 50vh;
-            background-color: rgb(196, 196, 0);
+            background-color: rgb(136, 216, 176, 1);
             width: 70vw;
             margin: 4rem auto;
         }
@@ -65,7 +65,7 @@
         #tilbage button {
             font-size: 2rem;
             padding: 1rem 2rem;
-            background-color: rgb(196, 196, 0);
+            background-color: rgb(136, 216, 176, 1);
         }
 
         #tilbage button:hover {
@@ -91,10 +91,8 @@
                 grid-gap: 2vw;
             }
         }
-
     </style>
 </head>
-
 
 <body>
 
@@ -104,7 +102,6 @@
         </div>
         <div id="indhold"></div>
     </div>
-
 
     <script>
         let urlParams = new URLSearchParams(window.location.search)
@@ -134,9 +131,8 @@
         }
         hentJson();
         document.querySelector("#tilbage button").addEventListener("click", () => {
-            location.href = "babushka-single.html"
+            location.href = "babushka-grim.html"
         })
-
     </script>
 
 </body>
