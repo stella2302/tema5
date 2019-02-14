@@ -14,7 +14,7 @@
 
         .kasse {
             padding: 2vw;
-            background-color: rgba(18, 33, 29, 0.33);
+            background-color: rgba(255, 238, 173, 1);
         }
 
         .menu {
@@ -51,7 +51,7 @@
 
         #indhold {
             min-height: 50vh;
-            background-color: rgb(136, 216, 176, 1);
+            background-color: rgba(255, 238, 173, 1);
             width: 70vw;
             margin: 4rem auto;
         }
@@ -65,7 +65,7 @@
         #tilbage button {
             font-size: 2rem;
             padding: 1rem 2rem;
-            background-color: rgb(136, 216, 176, 1);
+            background-color: rgba(255, 238, 173, 1);
         }
 
         #tilbage button:hover {
@@ -94,6 +94,7 @@
     </style>
 </head>
 
+
 <body>
 
     <div id="single">
@@ -102,6 +103,7 @@
         </div>
         <div id="indhold"></div>
     </div>
+
 
     <script>
         let urlParams = new URLSearchParams(window.location.search)
@@ -131,7 +133,7 @@
         }
         hentJson();
         document.querySelector("#tilbage button").addEventListener("click", () => {
-            location.href = "babushka-grim.html"
+            location.href = "babushka-single.html"
         })
     </script>
 
